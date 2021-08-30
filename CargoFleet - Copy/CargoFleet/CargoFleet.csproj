@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{042EE7AD-0A96-4693-B41C-668A8416D2F1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CargoFleet</RootNamespace>
+    <AssemblyName>CargoFleet</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DriverI.cs" />
+    <Compile Include="DriverInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DriverInfo.Designer.cs">
+      <DependentUpon>DriverInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DriverInfoReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DriverInfoReport.Designer.cs">
+      <DependentUpon>DriverInfoReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DriverLogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DriverLogIn.Designer.cs">
+      <DependentUpon>DriverLogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OfficeManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OfficeManager.Designer.cs">
+      <DependentUpon>OfficeManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OfficeMLogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OfficeMLogIn.Designer.cs">
+      <DependentUpon>OfficeMLogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SearchLocation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchLocation.Designer.cs">
+      <DependentUpon>SearchLocation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SerManagement.cs" />
+    <Compile Include="ServiceMLogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServiceMLogIn.Designer.cs">
+      <DependentUpon>ServiceMLogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServiceManagement.Designer.cs">
+      <DependentUpon>ServiceManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceManagementReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServiceManagementReport.Designer.cs">
+      <DependentUpon>ServiceManagementReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimesheetMLogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimesheetMLogIn.Designer.cs">
+      <DependentUpon>TimesheetMLogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimesheetManagent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimesheetManagent.Designer.cs">
+      <DependentUpon>TimesheetManagent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimesheetReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimesheetReport.Designer.cs">
+      <DependentUpon>TimesheetReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimesheetSchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimesheetSchedule.Designer.cs">
+      <DependentUpon>TimesheetSchedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TripMLogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TripMLogIn.Designer.cs">
+      <DependentUpon>TripMLogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TripManagement.cs" />
+    <Compile Include="TsheetManagement.cs" />
+    <Compile Include="VehicleInfo.cs" />
+    <Compile Include="VehicleInfoLogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VehicleInfoLogIn.Designer.cs">
+      <DependentUpon>VehicleInfoLogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VehicleInfoReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VehicleInfoReport.Designer.cs">
+      <DependentUpon>VehicleInfoReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VehicleInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VehicleInformation.Designer.cs">
+      <DependentUpon>VehicleInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VehicleRepository.cs" />
+    <Compile Include="VReport.cs" />
+    <EmbeddedResource Include="DriverInfo.resx">
+      <DependentUpon>DriverInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DriverInfoReport.resx">
+      <DependentUpon>DriverInfoReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DriverLogIn.resx">
+      <DependentUpon>DriverLogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OfficeManager.resx">
+      <DependentUpon>OfficeManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OfficeMLogIn.resx">
+      <DependentUpon>OfficeMLogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SearchLocation.resx">
+      <DependentUpon>SearchLocation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServiceMLogIn.resx">
+      <DependentUpon>ServiceMLogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServiceManagement.resx">
+      <DependentUpon>ServiceManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServiceManagementReport.resx">
+      <DependentUpon>ServiceManagementReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimesheetMLogIn.resx">
+      <DependentUpon>TimesheetMLogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimesheetManagent.resx">
+      <DependentUpon>TimesheetManagent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimesheetReport.resx">
+      <DependentUpon>TimesheetReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimesheetSchedule.resx">
+      <DependentUpon>TimesheetSchedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TripMLogIn.resx">
+      <DependentUpon>TripMLogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VehicleInfoLogIn.resx">
+      <DependentUpon>VehicleInfoLogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VehicleInfoReport.resx">
+      <DependentUpon>VehicleInfoReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VehicleInformation.resx">
+      <DependentUpon>VehicleInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DriverInformation.txt" />
+    <Content Include="ServiceManagement.txt" />
+    <Content Include="TimesheetM.txt" />
+    <Content Include="TimesheetReport.txt" />
+    <Content Include="VehicleReport.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
